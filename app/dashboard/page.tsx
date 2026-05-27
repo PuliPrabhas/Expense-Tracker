@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import AuthGuard from "@/components/AuthGuard";
+import MobileNav from "@/components/MobileNav";
 import { motion } from "framer-motion";
 import {
   LayoutDashboard,
@@ -188,6 +189,7 @@ export default function DashboardPage() {
 
   return (
     <AuthGuard>
+      <MobileNav />
       <main className="min-h-screen bg-black text-white flex">
         {/* Sidebar */}
         <aside className="w-72 border-r border-white/10 bg-white/5 backdrop-blur-xl p-6 hidden md:flex flex-col">

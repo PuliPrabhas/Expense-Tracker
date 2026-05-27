@@ -3,6 +3,7 @@ import AuthGuard from "@/components/AuthGuard";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { PiggyBank } from "lucide-react";
+import MobileNav from "@/components/MobileNav";
 
 export default function SettingsPage() {
   const [monthlyBudget, setMonthlyBudget] = useState("");
@@ -78,6 +79,7 @@ export default function SettingsPage() {
 
   return (
     <AuthGuard>
+        <MobileNav />
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-6 relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-20 h-72 w-72 bg-cyan-500/20 blur-3xl rounded-full" />

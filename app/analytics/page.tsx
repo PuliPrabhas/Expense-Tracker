@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import MobileNav from "@/components/MobileNav";
 import AuthGuard from "@/components/AuthGuard";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -147,6 +148,7 @@ export default function AnalyticsPage() {
 
   return (
     <AuthGuard>
+        <MobileNav />
       <main className="min-h-screen bg-black text-white flex">
         {/* Sidebar */}
         <aside className="w-72 border-r border-white/10 bg-white/5 backdrop-blur-xl p-6 hidden md:flex flex-col">

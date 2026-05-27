@@ -4,6 +4,7 @@ import { useState } from "react";
 import AuthGuard from "@/components/AuthGuard";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import MobileNav from "@/components/MobileNav";
 import {
   DollarSign,
   FileText,
@@ -164,6 +165,7 @@ export default function AddExpensePage() {
 
   return (
     <AuthGuard>
+      <MobileNav />
       <main className="min-h-screen bg-black text-white flex items-center justify-center px-6 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute inset-0 -z-10">
